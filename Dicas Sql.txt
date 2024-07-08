@@ -1,0 +1,11 @@
+# Como atualizar o cache do intellisense do SSMS
+ CTRL + SHIFT + R
+
+# Para arredondar casas decimais na query
+ROUND(CAMPO,2)
+
+# Abrir Novo File Query
+CTRL + N
+
+# Abrir novo arquivo 
+CTRL + O
