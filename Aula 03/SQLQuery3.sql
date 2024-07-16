@@ -1,21 +1,21 @@
--- # Funções de Argupamento e o Uso de Group By
--- Dados Qualitativos (Categórico)
-	-- Dados qualitativos são aqueles dados que não mensuráveis por si só. São dados de característica. Por exemplo: Cor da pele, Genêro, Cor de Cabelo e etc.
--- Dados Quantitativos (Numérico)
-	-- Já os dados quantitativos são aqueles dados que mensuram por si só. Idade, Altura, Peso, quantidade de vendas e etc.
--- A priori, dados quantitativos podem ser calculados, enquanto que dados qualitativos não.
+-- # FunÃ§Ãµes de Argupamento e o Uso de Group By
+-- Dados Qualitativos (CategÃ³rico)
+	-- Dados qualitativos sÃ£o aqueles dados que nÃ£o mensurÃ¡veis por si sÃ³. SÃ£o dados de caracterÃ­stica. Por exemplo: Cor da pele, GenÃªro, Cor de Cabelo e etc.
+-- Dados Quantitativos (NumÃ©rico)
+	-- JÃ¡ os dados quantitativos sÃ£o aqueles dados que mensuram por si sÃ³. Idade, Altura, Peso, quantidade de vendas e etc.
+-- A priori, dados quantitativos podem ser calculados, enquanto que dados qualitativos nÃ£o.
 
 
 /*
-SELECT -- O que? (Quais serão os dados)
+SELECT -- O que? (Quais serÃ£o os dados)
 	sepal_lenght AS SEPALA_LARGURA,
 	sepal_width AS SEPALA_COMPRIMENTO,
 	petal_length AS PETALA_LARGURA,
 	petal_width AS PETALA_COMPRIMENTO,
 	class AS CLASSE
-FROM -- Onde? (Quais são as tabelas que eu irei bscar os dados)
+FROM -- Onde? (Quais sÃ£o as tabelas que eu irei bscar os dados)
 	tbl_iris
-WHERE -- Como? (Quais são as regras da minha seleção)
+WHERE -- Como? (Quais sÃ£o as regras da minha seleÃ§Ã£o)
 	class = 'Iris-versicolor'
 	AND sepal_width > 2.1
 */
@@ -24,9 +24,9 @@ WHERE -- Como? (Quais são as regras da minha seleção)
 
 SELECT
 	class,
-	ROUND(SUM(sepal_lenght),2) AS SEPALA_COMPRIMENTO, -- SUM é uma função de agregação que soma todos os valores da coluna
-	ROUND(AVG(sepal_lenght),2) AS SEPALA_MEDIA_COMPRIMENTO, -- AVG é uma função que mostra a média
-	COUNT(sepal_lenght) AS SEPALA_QUANTIDADE -- COUNT é uma função que mostra a quantidade
+	ROUND(SUM(sepal_lenght),2) AS SEPALA_COMPRIMENTO, -- SUM Ã© uma funÃ§Ã£o de agregaÃ§Ã£o que soma todos os valores da coluna
+	ROUND(AVG(sepal_lenght),2) AS SEPALA_MEDIA_COMPRIMENTO, -- AVG Ã© uma funÃ§Ã£o que mostra a mÃ©dia
+	COUNT(sepal_lenght) AS SEPALA_QUANTIDADE -- COUNT Ã© uma funÃ§Ã£o que mostra a quantidade
 FROM
 	tbl_iris
 GROUP BY

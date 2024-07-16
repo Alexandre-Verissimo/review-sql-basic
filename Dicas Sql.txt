@@ -9,3 +9,6 @@ CTRL + N
 
 # Abrir novo arquivo 
 CTRL + O
+
+# Verificar enconde ao salvar a query
+

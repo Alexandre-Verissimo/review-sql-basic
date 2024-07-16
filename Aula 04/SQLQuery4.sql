@@ -7,10 +7,10 @@
 	<> - Diferente
 	= - Igual
 
-	Operadores LÛgicos
+	Operadores L√≥gicos
 	AND - E
 	OR - OU
-	NOT - N√O
+	NOT - N√ÉO
 */
 
 SELECT 
@@ -22,7 +22,7 @@ WHERE
 	class = 'Iris-setosa' AND
 	petal_length > 1.3
 
--- Caso eu queira fazer um select onde n„o apareÁa a iris-versicolor
+-- Caso eu queira fazer um select onde n√£o apare√ßa a iris-versicolor
 
 /* SELECT 
 	class AS CLASSE_PETALA,
@@ -34,12 +34,12 @@ WHERE
 	class = 'Iris-virginica' AND
 	petal_length > 1.3
 
-Em tese isso poderia funcionar, mas n„o ir·. Pois, no momento em que se faz um and class duas vezes, 
-o que na real o sql entender È que a consulta deve retornar um os campos onde tenham as duas ao mesmo tempo.
-… como se pra o sql, ele etendesse que tem que trazer um class de planta onde seja Iris-setosa e Iris-virgininica 
-ao mesmo tempo e isso È impossÌvel.
+Em tese isso poderia funcionar, mas n√£o ir√°. Pois, no momento em que se faz um and class duas vezes, 
+o que na real o sql entender √© que a consulta deve retornar um os campos onde tenham as duas ao mesmo tempo.
+√â como se pra o sql, ele etendesse que tem que trazer um class de planta onde seja Iris-setosa e Iris-virgininica 
+ao mesmo tempo e isso √© imposs√≠vel.
 
-J· se for utilizar o or, lembrar de usar parenteses para que junto com o and n„o ocorra equivocos no calculo booleana do sql.
+J√° se for utilizar o or, lembrar de usar parenteses para que junto com o and n√£o ocorra equivocos no calculo booleana do sql.
 */
 
 SELECT
